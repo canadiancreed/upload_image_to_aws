@@ -10,5 +10,5 @@ sudo service docker start
 sudo chkconfig docker on
 sudo systemctl enable docker
 
-sudo docker build -t node-app Dockerfile
+sudo docker build -t node-app ../Dockerfile
 sudo docker run --rm -p 8080:8080 --name node-app-run node-app
